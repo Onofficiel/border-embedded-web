@@ -319,6 +319,9 @@ Because of the iframe system some website won't work in this browser (like youtu
         let viewElement = document.createElement("iframe");
         viewElement.classList.add("border-view");
         viewElement.dataset.id = tabElement.dataset.id;
+        viewElement.style.border="none";
+        viewElement.style.width="100%";
+        viewElement.style.height="100%";
 
         this.#viewContainer.appendChild(viewElement);
         // <
